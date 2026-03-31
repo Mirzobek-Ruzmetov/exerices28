@@ -1,31 +1,24 @@
-// Number Methods
-let num = 10_000_000;
-let myNum = 4.1
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
 
-// Rounding
-console.log(Math.round(myNum)); // normal yaxlitlash
-console.log(Math.floor(myNum)); // pastga yaxlitlash
-console.log(Math.ceil(myNum)); // yuqoriga yaxlitlash
-console.log(Math.trunc(myNum)); // nuqtadan keyingi qismini tashlab yuboradi
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
 
-// isNaN - son bolmagan ma'lumot turimi 
-// NaN - Not a Number - Son emas
-console.log(isNaN("abs")); // true
-console.log(NaN === NaN); // false
 
-// isFinite 
-console.log(isFinite("abs")); // false
-console.log(isFinite(10)); // true
-console.log(isFinite(Infinity)); // false
-
-// parseInt and parseFloat
-// parseInt - butun songa ogirish
-console.log(parseInt("100.9inc"));
-// parseFloat - qoldiq, haqiqiy songa ogirish
-console.log(parseFloat("100.9px"));
-
-let num2 = 123.45678912345
-console.log(num2.toFixed(3)); // 123,456 string
-
-let randomNumber = Math.floor(Math.random() *100)
-console.log(randomNumber); 
+let text;
+if (Math.random() < 0.5) {
+  text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+} else {
+  text = "<a href='https://wwf.org'>Visit WWF</a>";
+}
+document.getElementById("demo").innerHTML = text;
